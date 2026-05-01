@@ -47,7 +47,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all cards and sections
 const animatedElements = document.querySelectorAll(
-    '.problem-card, .feature-card, .solution-content, .cta-content'
+    '.problem-card, .feature-card, .upcoming-card, .solution-content, .cta-content'
 );
 
 animatedElements.forEach(el => {
