@@ -660,16 +660,13 @@ section {
 
 .upcoming-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
 }
 
 .upcoming-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
     background: linear-gradient(135deg, var(--medium-gray), rgba(42, 42, 42, 0.6));
-    padding: 32px;
+    padding: 40px;
     border-radius: 20px;
     border: 1px solid rgba(255, 170, 0, 0.15);
     transition: all 0.4s ease;
@@ -682,34 +679,33 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, #FFAA00, var(--primary-red));
-    transform: scaleY(0);
-    transform-origin: top;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FFAA00, var(--primary-red));
+    transform: scaleX(0);
     transition: transform 0.4s ease;
 }
 
 .upcoming-card:hover::before {
-    transform: scaleY(1);
+    transform: scaleX(1);
 }
 
 .upcoming-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
     border-color: rgba(255, 170, 0, 0.4);
     box-shadow: 0 8px 32px rgba(255, 170, 0, 0.15);
 }
 
 .upcoming-icon {
-    width: 56px;
-    height: 56px;
-    min-width: 56px;
+    width: 64px;
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, rgba(255, 170, 0, 0.15), rgba(227, 30, 36, 0.1));
     border: 1px solid rgba(255, 170, 0, 0.2);
-    border-radius: 14px;
+    border-radius: 16px;
+    margin-bottom: 24px;
     color: #FFAA00;
     transition: all 0.3s ease;
 }
@@ -718,25 +714,25 @@ section {
     background: linear-gradient(135deg, #FFAA00, var(--primary-red));
     color: var(--white);
     border-color: transparent;
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(5deg);
 }
 
 .upcoming-icon svg {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
 }
 
 .upcoming-content h3 {
     font-family: var(--font-display);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: var(--white);
 }
 
 .upcoming-content p {
     color: var(--light-gray);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.7;
 }
 
